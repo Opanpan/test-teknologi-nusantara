@@ -1,15 +1,14 @@
 import * as types from "../types";
 
 const initialState = {
-  user: "Unknown",
-  age: "17",
+  data: "Unknown",
 };
 
 export const userReducer = (state = initialState, action) => {
   switch (action.type) {
-    case types.GET_USER:
+    case types.GET_DATA:
       return {
-        user: action.payload,
+        data: action.payload,
       };
     default:
       return state;
